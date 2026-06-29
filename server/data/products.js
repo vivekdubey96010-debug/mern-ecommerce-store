@@ -1,0 +1,68 @@
+const products = [
+  {
+    name: "Gaming Laptop",
+    price: 69999,
+    category: "Laptop",
+    image: "/images/laptop.jpg",
+    description: "High-performance gaming laptop with powerful graphics.",
+    stock: 10,
+  },
+  {
+    name: "Smart Phone",
+    price: 24999,
+    category: "Mobile",
+    image: "/images/phone.jpg",
+    description: "Latest smartphone with excellent camera and battery.",
+    stock: 15,
+  },
+  {
+    name: "Headphones",
+    price: 2999,
+    category: "Accessories",
+    image: "/images/headphones.jpg",
+    description: "Noise-cancelling wireless headphones.",
+    stock: 20,
+  },
+  {
+    name: "Smart Watch",
+    price: 4999,
+    category: "Accessories",
+    image: "/images/watch.jpg",
+    description: "Stylish smartwatch with fitness tracking.",
+    stock: 12,
+  },
+  {
+    name: "Bluetooth Speaker",
+    price: 3999,
+    category: "Accessories",
+    image: "/images/speaker.jpg",
+    description: "Portable Bluetooth speaker with deep bass.",
+    stock: 18,
+  },
+  {
+    name: "Digital Camera",
+    price: 29999,
+    category: "Camera",
+    image: "/images/camera.jpg",
+    description: "Professional digital camera for photography.",
+    stock: 8,
+  },
+  {
+    name: "Mechanical Keyboard",
+    price: 2499,
+    category: "Accessories",
+    image: "/images/keyboard.jpg",
+    description: "RGB mechanical keyboard for gamers.",
+    stock: 25,
+  },
+  {
+    name: "Wireless Mouse",
+    price: 1499,
+    category: "Accessories",
+    image: "/images/mouse.jpg",
+    description: "Ergonomic wireless mouse.",
+    stock: 30,
+  },
+];
+
+module.exports = products;
