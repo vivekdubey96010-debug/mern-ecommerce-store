@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import { IMAGE_URL } from "../config";
 
 function Cart() {
   const {
@@ -31,8 +32,8 @@ function Cart() {
               key={item._id}
             >
               <img
-                src={`http://localhost:5000${item.image}`}
-                alt={item.name}
+              src={`${IMAGE_URL}${item.image}`}
+              alt={item.name}
               />
 
               <div>

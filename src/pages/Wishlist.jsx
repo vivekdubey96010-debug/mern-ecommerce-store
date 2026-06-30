@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { WishlistContext } from "../context/WishlistContext";
+import { IMAGE_URL } from "../config";
 
 function Wishlist() {
   const {
@@ -20,8 +21,8 @@ function Wishlist() {
             key={item._id}
           >
             <img
-              src={`http://localhost:5000${item.image}`}
-              alt={item.name}
+            src={`${IMAGE_URL}${item.image}`}
+            alt={item.name}
             />
 
             <div>

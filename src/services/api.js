@@ -1,7 +1,8 @@
 import axios from "axios";
+import { API_URL } from "../config";
 
 const API = axios.create({
-  baseURL: "https://mern-ecommerce-store-hs2a.onrender.com/api",
+  baseURL: API_URL,
   headers: {
     "Content-Type": "application/json",
   },

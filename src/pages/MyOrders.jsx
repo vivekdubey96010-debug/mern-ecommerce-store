@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
+import { IMAGE_URL } from "../config";
 
 function MyOrders() {
   const [orders, setOrders] = useState([]);
@@ -65,12 +66,10 @@ function MyOrders() {
                   }}
                 >
                   <img
-                    src={`http://localhost:5000${item.image}`}
-                    alt={item.name}
-                    width="70"
-                    style={{
-                      marginRight: "15px",
-                    }}
+                  src={`${IMAGE_URL}${item.image}`}
+                  alt={item.name}
+                  width="70"
+                  style={{ marginRight: "15px" }}
                   />
 
                   <div>

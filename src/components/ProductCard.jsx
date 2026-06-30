@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 import { CartContext } from "../context/CartContext";
 import { WishlistContext } from "../context/WishlistContext";
+import { IMAGE_URL } from "../config";
 
 function ProductCard({ product }) {
   // 👇 Debugging ke liye
@@ -24,10 +25,10 @@ function ProductCard({ product }) {
 
   return (
     <div className="product-card">
-      <img
-        src={`http://localhost:5000${product.image}`}
-        alt={product.name}
-      />
+  <img
+  src={`${IMAGE_URL}${product.image}`}
+  alt={product.name}
+  />
 
       <h3>{product.name}</h3>
 

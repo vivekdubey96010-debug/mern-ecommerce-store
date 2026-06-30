@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 import API from "../services/api";
 import { CartContext } from "../context/CartContext";
+import { IMAGE_URL } from "../config";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -37,8 +38,8 @@ function ProductDetails() {
   return (
     <div className="details">
       <img
-        src={`http://localhost:5000${product.image}`}
-        alt={product.name}
+      src={`${IMAGE_URL}${product.image}`}
+      alt={product.name}
       />
 
       <div>
