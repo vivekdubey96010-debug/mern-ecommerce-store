@@ -1,115 +1,177 @@
-# 🛒 TechStore - Full Stack E-Commerce Website
+# 🛒 TechStore - MERN E-Commerce Website
 
-A modern Full Stack E-Commerce web application built using the MERN Stack.
+A full-stack MERN E-Commerce web application where users can browse products, search and filter items, add products to cart & wishlist, register/login, place orders, and view their order history.
 
 ## 🚀 Live Demo
 
-Frontend: *(Add after deployment)*
+### 🌐 Frontend (Vercel)
+https://mern-ecommerce-store-blush.vercel.app/
 
-Backend: *(Add after deployment)*
+### ⚙️ Backend (Render)
+https://mern-ecommerce-store-hs2a.onrender.com
 
----
-
-## 📌 Features
-
-* User Registration & Login (JWT Authentication)
-* Secure Authentication
-* Product Listing
-* Product Details Page
-* Search Products
-* Category Filter
-* Shopping Cart
-* Wishlist
-* Place Order
-* Checkout
-* My Orders
-* Responsive Design
-* Toast Notifications
-* Loading Spinner
-* 404 Page
+### 💻 GitHub Repository
+https://github.com/vivekdubey96010-debug/mern-ecommerce-store
 
 ---
 
-## 🛠 Tech Stack
+# ✨ Features
 
-### Frontend
-
-* React.js
-* React Router DOM
-* Axios
-* React Toastify
-* CSS
-
-### Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* JWT
-* bcryptjs
+- User Registration & Login (JWT Authentication)
+- Browse Products
+- Product Details Page
+- Search Products
+- Category Filter
+- Shopping Cart
+- Wishlist
+- Checkout
+- Place Order
+- My Orders
+- Responsive Design
+- Toast Notifications
+- Dark Mode
+- MongoDB Database
+- REST APIs
 
 ---
 
-## 📂 Folder Structure
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- React Router DOM
+- Context API
+- Axios
+- React Toastify
+- CSS
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcrypt.js
+- dotenv
+- CORS
+
+---
+
+# 📂 Project Structure
 
 ```
-client/
-server/
+E-commerce-store
+│
+├── src
+├── public
+├── server
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── public/images
+│   └── server.js
+│
+├── package.json
+└── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone Repository
+## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/techstore.git
+git clone https://github.com/vivekdubey96010-debug/mern-ecommerce-store.git
 ```
 
-### Frontend
+## Install Frontend
 
 ```bash
-cd client
 npm install
-npm run dev
 ```
 
-### Backend
+## Install Backend
 
 ```bash
 cd server
 npm install
-npm run server
 ```
 
 ---
 
-## 🔑 Environment Variables
+# 🔑 Environment Variables
 
-Create a `.env` file inside the server folder.
+Create a `.env` file inside the `server` folder.
 
 ```
+MONGO_URI=YOUR_MONGODB_URI
+
+JWT_SECRET=YOUR_SECRET
+
 PORT=5000
-MONGO_URI=Your MongoDB URI
-JWT_SECRET=Your Secret Key
 ```
 
 ---
 
-## 👨‍💻 Author
+# ▶ Run Project
+
+## Backend
+
+```bash
+cd server
+npm run dev
+```
+
+## Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+
+# 📌 API Endpoints
+
+## Authentication
+
+- POST /api/auth/register
+- POST /api/auth/login
+
+## Products
+
+- GET /api/products
+- GET /api/products/:id
+
+## Orders
+
+- POST /api/orders
+- GET /api/orders
+
+---
+
+# 🚀 Deployment
+
+Frontend deployed on **Vercel**
+
+Backend deployed on **Render**
+
+Database hosted on **MongoDB Atlas**
+
+---
+
+# 👨‍💻 Author
 
 **Vivek Dubey**
 
-GitHub: https://github.com/vivekdubey96010-debug
-
-LinkedIn: https://linkedin.com/in/vivek-dubey-4a3a6a365
-
-Email: [vivekdubey96010@gmail.com](mailto:vivekdubey96010@gmail.com)
+GitHub:
+https://github.com/vivekdubey96010-debug
 
 ---
 
-## 📄 License
-
-This project is created for educational purposes.
+# ⭐ If you like this project, don't forget to star the repository.
